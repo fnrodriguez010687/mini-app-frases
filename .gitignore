@@ -3,10 +3,13 @@ bin/
 obj/
 *.user
 *.vs/
+*.vscode/
 # Node/Angular
 node_modules/
 dist/
 .tmp/
 .DS_Store
+*.angular/
+
 # Docker
 docker-compose.override.yml
