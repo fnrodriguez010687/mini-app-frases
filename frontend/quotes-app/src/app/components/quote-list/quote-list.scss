@@ -1,0 +1,10 @@
+.quote-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.text { font-size: 1.2rem; }
+.author { font-style: italic; margin-top: 0.5rem; }
+.tags { list-style: none; padding: 0; display: flex; gap: 0.5rem; }
+.tags li { background: #efefef; padding: 0.2rem 0.6rem; border-radius: 3px; }
