@@ -1,0 +1,12 @@
+# .NET
+bin/
+obj/
+*.user
+*.vs/
+# Node/Angular
+node_modules/
+dist/
+.tmp/
+.DS_Store
+# Docker
+docker-compose.override.yml
