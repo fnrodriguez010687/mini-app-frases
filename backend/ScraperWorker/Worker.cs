@@ -22,7 +22,10 @@ public class Worker : BackgroundService
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             }
             var quotes = await _scraper.ScrapeFirstPageAsync();
-            await _repo.SaveAsync(quotes);
+            if (quotes.Any())
+            {
+                await _repo.SaveAsync(quotes);
+            }
             await Task.Delay(1000, stoppingToken);
         }
     }
