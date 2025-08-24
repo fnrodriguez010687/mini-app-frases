@@ -1,7 +1,9 @@
 <div class="quote-list">
   <div class="quote-card" *ngFor="let q of quotes">
+    <div class="quote-content">
     <p class="text">“{{ q.text }}”</p>
     <p class="author">— {{ q.author }}</p>
+    </div>
     <ul class="tags">
       <li *ngFor="let tag of q.tags">{{ tag }}</li>
     </ul>
